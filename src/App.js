@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import WelcomePage from "./components/WelcomePage";
+import LocationCard from './components/LocationCard'
 
 import { Route, Link } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ export default function App() {
 
       <Route exact path='/' component={WelcomePage}/>
       <Route path='/characters' component={CharacterList}/>
+      <Route path= '/locations' component={LocationCard}/>
     </main>
   );
 }
